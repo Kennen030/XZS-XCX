@@ -1,0 +1,41 @@
+view,text{
+  box-sizing: border-box;
+}
+
+page {
+  --themeColor: #BDA066;
+  --globalColor: #1a1b1c;
+  --focusColor: #4c4d4e;
+  --descColor: #7e8081;
+  --greyColor:#8e8e8e;
+  --subColor: #b1b2b3;
+  --lightColor:#e4e4e4;
+  --globalBgColor1: #e3e4e5;
+  --globalBgColor2: #f6f7f8;
+  --globalBgColor3: #ffffff;
+}
+
+.pubTitle{
+  text-align: center;
+}
+.pubTitle .en{
+  font-size: 80rpx;
+  font-weight: 700;
+  text-transform: uppercase;      /*文字转大写*/
+  color: var(--themeColor);
+  opacity: 0.3;
+}
+.pubTitle .cn{
+  font-size: 65rpx;
+  font-weight: 700;
+  opacity: 0.8;
+  transform: translateY(-60rpx);
+}
+.pubTitle .line{
+  display: inline-block;
+  width: 100rpx;
+  height: 5rpx;
+  border-radius: 2rpx;
+  background: var(--themeColor);
+  transform: translateY(-60rpx);
+}

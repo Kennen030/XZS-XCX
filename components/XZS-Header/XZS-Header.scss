@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  justify-content: space-between;     // 两边对齐
+  align-items: center;                // 垂直居中
+  padding:0 20rpx;
+  height: 120rpx;
+  border-bottom: 1px solid var(--themeColor);
+  .logo{
+    height: 70rpx;
+    // image{     尽量不要使用标签名，会有黄色警示
+    .pic{
+      height: 100%;
+    }
+  }
+  .search {
+    .icon{
+      color: var(--themeColor); 
+      font-size: 56rpx;
+    }
+  }
+}
+

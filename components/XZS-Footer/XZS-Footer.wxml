@@ -1,0 +1,13 @@
+<view class="footer">
+  <view class="row">解释权归巷子深贸易有限公司所有</view>
+  <view class="row">Copyright © {{year}} 版权所有</view>
+  <view class="row">山东省济南市中弘广场D座一楼102a</view>
+
+  <!-- 客服模块 -->
+  <view class="service">
+  <button class="kefu" open-type="contact"></button>      <!-- 组件想要触发弹窗，必须使用按钮 -->
+  <image src="/images/kefu.png" mode="aspectFill" class="pic"/>
+  <view class="line"></view>
+</view>
+</view>
+

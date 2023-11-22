@@ -1,0 +1,46 @@
+.nsItem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  .pic {
+    width: 220rpx;
+    height: 150rpx;
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 440rpx;
+    height: 150rpx;
+    text-align: justify;    // 文本两端对齐
+    .title {
+      font-size: 32rpx;
+      line-height: 1.4em;
+      color: var(--globalColor);
+      // 多出来文字省略号显示（兼容性）
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;        // 这个值表明内容显示了多少行之后会被限制。必须大于 0。
+      -webkit-box-orient: vertical;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24rpx;
+      color: var(--subColor);
+      .block {
+        display: flex;
+        align-items: center;
+      }
+      .icon{
+        padding: 0 6rpx;
+        color: var(--subColor);
+      }
+    }
+  }
+}

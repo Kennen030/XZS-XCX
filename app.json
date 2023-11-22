@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/proDetail/proDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "好茶不怕巷子深",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#818181",
+    "selectedColor": "#BDA066",
+    "list": [
+      {
+        "text":"首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-fill.png"
+      },{
+        "text":"分类",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/all.png",
+        "selectedIconPath": "images/all-fill.png"
+      },{
+        "text": "新闻",
+        "pagePath": "pages/news/news",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news-fill.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "XZS-Header": "/components/XZS-Header/XZS-Header",
+    "XZS-News-Item": "/components/XZS-News-Item/XZS-News-Item",
+    "XZS-Footer": "/components/XZS-Footer/XZS-Footer",
+    "XZS-Product-Item": "/components/XZS-Product-Item/XZS-Product-Item",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

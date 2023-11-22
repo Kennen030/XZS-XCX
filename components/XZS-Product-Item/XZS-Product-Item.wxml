@@ -1,0 +1,26 @@
+<view class="product" bind:tap="clickPro" data-id="{{item}}">
+  <view class="pic"><image class="img" src="{{item.picpath}}" mode="widthFix"/></view>
+  <view class="introduce">
+    <view class="title">{{item.title}}</view>
+    <view class="row">
+      <view class="left"><text space="emsp">货 号：</text></view>
+      <view class="rigth">{{item.pronum}}</view>
+    </view>
+    <view class="row">
+      <view class="left"><text space="emsp">等 级：</text></view>
+      <view class="rigth">{{item.grade}}</view>
+    </view>
+    <view class="row">
+      <view class="left"><text space="emsp">年 份：</text></view>
+      <view class="rigth">{{item.year}}</view>
+    </view>
+    <view class="row">
+      <view class="left"><text space="emsp">净含量：</text></view>
+      <view class="rigth">{{item.weight}}</view>
+    </view>
+    <view class="row">
+      <view class="left"><text space="emsp">零售价：</text></view>
+      <view class="rigth">{{item.price}}</view>
+    </view>
+  </view>
+</view>

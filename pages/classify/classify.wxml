@@ -1,0 +1,36 @@
+<XZS-Header></XZS-Header>
+
+<view class="banner">
+  <swiper class="swiper" circular="{{true}}" autoplay="{{true}}" 	interval="5000" indicator-dots 	indicator-color="#666" 	indicator-active-color="#fff">
+    <swiper-item class="swpItem">
+      <image class="pic" src="/images/teaBanner.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item class="swpItem">
+      <image class="pic" src="/images/teaBanner.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item class="swpItem">
+      <image class="pic" src="/images/teaBanner.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item class="swpItem">
+      <image class="pic" src="/images/teaBanner.jpg" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="scrollNav">
+  <van-tabs id="vanTabs" active="{{navActive}}" border color="var(--themeColor)" title-active-color="var(--themeColor)" bind:click="navChange">
+    <van-tab title="{{item.classname}}" wx:for="{{navArr}}" wx:key="_id"></van-tab>
+  </van-tabs>
+</view>
+
+<view class="content">
+  <view class="body">
+    <view class="box" wx:for="{{productArr}}" wx:key="index">
+      <XZS-Product-Item item="{{item}}"></XZS-Product-Item>
+    </view>
+  </view>
+  <view class="loadOut">
+    <van-loading size="24rpx" wx:if="{{loading}}">加载中...</van-loading>
+    <view class="noData" wx:if="{{isData}}">没有更多数据了...</view>
+  </view>
+</view>

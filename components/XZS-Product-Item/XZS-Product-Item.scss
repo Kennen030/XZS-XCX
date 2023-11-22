@@ -1,0 +1,34 @@
+.product{
+  border: 4rpx solid #eee;
+  .pic{
+    .img{
+      width: 100%;
+    }
+  }
+  .introduce{
+    padding: 15rpx;
+    .title{
+      padding: 15rpx 0;
+      font-size: 35rpx;
+      font-weight: 600;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: var(--focusColor);
+    }
+    .row{
+      display: flex;
+      font-size: 26rpx;
+      line-height: 2em;
+      .left{
+        white-space: nowrap;
+        color: var(--greyColor);
+      }
+      .rigth{
+        font-weight: 600;
+        color: var(--descColor);
+        white-space: nowrap;
+      }
+    }
+  }
+}

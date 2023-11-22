@@ -1,0 +1,16 @@
+.news {
+  padding: 30rpx;
+  .loading {
+    size: 24rpx;
+    color: var(--themeColor);
+    padding: 30rpx;
+    text-align: center;
+  }
+  .noMore {
+    padding: 30rpx;
+    font-size: 28rpx;
+    font-weight: 700;
+    text-align: center;
+    color: var(--greyColor);
+  }
+}
